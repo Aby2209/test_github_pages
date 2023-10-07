@@ -1,0 +1,474 @@
+<!Doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css"rel="stylesheet">
+    <title>Bootstrap Example</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap" rel="stylesheet">
+    
+  
+<style>
+    
+    body{
+      background-color: rgb(199, 181, 160);
+    }
+    
+    h2 {
+          color: rgb(102, 86, 66);
+          background-color: rgb(207, 223, 173);
+          width: 20%;
+        }
+    
+    h1 {
+          font-family: Josefin Sans;
+        }
+        
+        h2 {
+          font-size: 23px;
+        }
+    
+    p {
+          font-size: 20px;
+        }
+        
+      table, th, td{
+          border: 2px solid black;
+          border-collapse: collapse;
+          margin: 15px 20px;
+        }
+    
+     th, td{
+          padding: 10px;
+        }
+        
+        th{
+          text-decoration:underline;
+          font-size:23px;
+          color: rgb(102, 86, 66);
+        }
+        
+        td{
+          font-size: 20px;
+        }
+    
+    #main-menu{
+          float: left;
+          width: 100%;
+          background-color: rgb(163, 148, 127);
+          box-shadow: 2px 2px 5px black;
+          text-transform: uppercase;
+          border-top: solid 1px white;
+        }
+    
+    #container{
+          max-width: 1200px;
+          margin: 0 auto;
+        }
+    
+    ul{
+          list-style: none;
+          padding: 0;
+          margin: 0;
+        }
+    
+    a{
+          color: var(--primary-color);
+          text-decoration: none;
+          transition: all 0,3s;
+        }
+    
+    a:hover{
+          color: var(--primary-color-dark);
+        }
+    
+    #main-menu > ul > li{
+          float: left;
+          margin: 10px 0;
+        }
+    
+    #main-menu > ul > li > a{
+          color: white;
+          padding: 10px 20px;
+          font-size: 20px;
+          border-right: solid 1px white;
+        }
+    
+    #main-menu > ul > li > a:hover{
+          background-color: rgb(199, 200, 160);
+        }
+    
+    #main-menu > ul > li > ul{
+          display: none;
+          position: absolute;
+          margin-top: 10px;
+        }
+    
+    #main-menu > ul > li > ul > li > a{
+          display: block;
+          color: white;
+          background-color:  rgb(163, 148, 127);
+          padding: 15px;
+          font-size: 18px;
+          border-top: solid 1px white;
+        }
+    
+    #main-menu > ul > li > ul > li > a:hover{
+          background-color: rgb(199, 200, 160);
+        }
+    
+    #main-menu > ul > li:hover > ul{
+          display: block;
+          box-shadow: 2px 2px 5px black;
+        }
+    
+    div#contenedor{
+				border:2px solid black;
+				margin:20px 20px;
+				padding:5px;
+				width:550px;
+              background: rgb(160, 235, 182);
+
+			}
+    
+    img#foto1{
+				border:1px solid black;
+				height:115px;
+				width:150px;
+				float:right;
+				margin: 19px 19px;
+              background: rgb(150, 171, 236);
+			}
+    
+    div#parrafo{
+			  font-size:16px;
+		      text-align:center;
+              background: rgb(235, 227, 160);
+              margin: 15px 15px;              
+              border: solid 1px black;            
+              padding: 46px 10px;
+            font-size:20px;
+			}
+    
+    nav{
+            border: solid 1px black;
+            margin: 15px 15px;
+            background: pink;
+            text-align: center;
+          }
+    
+    section{
+            border: solid 1px black;
+            margin: 9px 15px;
+            text-align: justify;
+            width: 50%;
+            background: rgb(235, 227, 160);
+            padding: 9px 10px;
+
+          }
+    
+    .two{
+            border: solid 1px black;
+            background: rgb(150, 171, 236);
+            margin: 1px 5px;
+            height: 50%;
+            padding: 5px 13px;
+            text-align: justify;
+            float: right;  
+            font-size:19px;
+          }
+    
+    .two{
+            width: 38%;
+          }
+    
+    footer{
+            border: solid 1px black;
+            background: pink;
+            text-align: center;
+            margin: 15px 15px;
+          }
+    
+  </style>
+  
+  </head>
+  <body class="p-3 m-0 border-0 bd-example m-0 border-0 bg-body-secondary">
+
+<nav id= "main-menu">
+       
+       <ul>
+         
+         <li>
+           
+           <a href ="index.html">Inicio</a>
+           
+         </li>
+         
+         <li>
+           <a href="#"> Los conejos </a>
+           
+       <ul>
+         <li>
+           <a href="#">Información basica</a>
+         </li>
+         
+         <li>
+           <a href="#">Características</a>
+         </li>
+       </ul>
+       </li>
+         <li>
+           <a href="#"> Los koalas </a>
+       
+             <ul>
+               <li>
+           <a href="#">Información basica</a>
+         </li>
+         
+         <li>
+           <a href="#">Características</a>
+         </li>
+       </ul>
+       </li>
+         <li>
+            <li>
+           <a href="#">Los Pandas rojos</a>
+           
+       <ul>
+         <li>
+           <a href="#">Información basica</a>
+         </li>
+         
+         <li>
+           <a href="#">Características</a>
+         </li>
+       </ul>
+       </li>
+         <li> 
+                  
+     </nav>
+  
+   <h1>Animales tiernos</h1>
+
+      <h2>¡El conejo!</h2>
+    
+    <img src="https://i.pinimg.com/564x/f6/2e/95/f62e95faf9aa45b6436b74558f095285.jpg" alt="brown rabbit in yellow flower meadow" width="200"> 
+    
+    <h2>Informacion básica</h2>
+    
+    <p>El conejo compun o conejo europeo,
+      es una especie de mamifero largomorfo
+     (un orden perteneciente a los mamíferos
+      placentarios), de la familia leporidae
+     (conocidos como conejos liebres). Llegan
+      a medir hasta 50 cm y su masa puede ser
+      de hasta 2.5 kg. Ha sido introducido en
+      varios continentes y es la especie que
+      se utiliza en la cocina y en la cunicultura</p>
+    
+    <h2>Características</h2>
+    
+    <p>Se caracterizan por tener un cuerpo cubierto de pelaje
+      espero y lanudo, de color pardo a pálido grisoso,
+      tienen la cabeza ovalada y ojos grandes,
+      tienen orejas largas, de hasta 7 cm. Sus orejas
+      lo ayudan a regular la temperatura del cuerpo y
+      tienen una cola muy corta.</p>
+      
+      <p>Los conejos son muy tiernos, tanto físicamente como al
+      tacto, son muy peludos, suaves y su rostro es muy tierno.
+      </p>
+
+    <head>
+        <meta charset="utf-8">
+        <title>CSS Basics</title>
+    </head>
+    <body>
+
+    <h2>¡El koala!</h2>
+    
+    <img src="https://i.pinimg.com/564x/6e/6e/aa/6e6eaaef8189c45ada3e2431ebb2e876.jpg" alt="koala hanging on a branch" width="200"> 
+    
+    <h2>Informacion básica</h2>
+    
+    <p>El koala es una especia de marsupial diprotondonto de la
+      familia Phascolarctidae, endémico de Australia. Es el único
+      representante existente de la familia phascolarctidae y sus
+      parientes vivos más cercanos son los Wombats.</p>
+    
+    <h2>Características</h2>
+    
+    <p>Es un marsupial arborícola y hervíboro. Su principal
+      característica que distingue a lso marsupiales de otros
+      mamíferos es que dan a luz a una cría inmadura que completa
+      su desarrollo en la bolsa.</p>
+      
+      <p>Son muy tiernos físicamente, pero al tacto no lo son
+      suaves como se ven, su pelaje es grueso y lanudo y esto
+        es lo que los proteje tanto del calor como del frio.</p>
+    
+    <head>
+        <meta charset="utf-8">
+        <title>CSS Basics</title>
+    </head>
+    <body>
+
+    <h2>¡El panda rojo!</h2>
+    
+    <img src="https://i.pinimg.com/564x/6b/98/a9/6b98a9dbc752f3ea98b3811773a0e7ea.jpg" alt="red panda sleeping on a branch" width="200"> 
+    
+    <h2>Informacion básica</h2>
+    
+    <p>El panda rojo es una especie de mamífero amnívoro de la
+      familia Ailuridae, aunque se había clasificado dentro de
+      las familias de los prociónidos y de los úrsidos.</p>
+    
+    <h2>Características</h2>
+    
+    <p>Parecido a un mapache, tiene el cuerpo cubierto de un
+      pelaje denso de color castaño-rojizo. La parte delantera
+      de las orejas, mejillas y hocico son blancas, la cabeza
+      redonde y las orejas puntiagudas. La cola es larga y
+      peluda formando un dibujo de 12 bandas alternando con
+      amarillas.</p>
+      
+      <p>Les encanta el bambú, comen además frutas, bellotas,
+      raíces y huevos. Son muy tiernos físicamente y su pelaje
+      es largo, abundante y suave.</p>
+      
+      <table style="width: 50%;">
+        <!Cabecera>
+        <tr>
+          <th>Conejo</th>
+          <!Celda de cabecera de la columna 1>
+          <th>Koala</th>
+          <!Celda de cabecera de la columna 2>
+          <th>Panda Rojo</th>
+          <!Celda de cabecera de la columna 3>
+        </tr>
+        
+        <!Primera fila>
+        <tr>
+          <td>Los conejos comen verduras, hojas y
+            hierba fresca por su aporte de fibra,
+            vitaminas y minerales, como las hojas
+            de zanahoria, la escarola, la rúcula,
+            los canónigos o la col lombarda</td>
+          
+          <!Primera celda de la primera fila>
+          <td>Se alimentan de las hojas de eucalipto
+            sobre todo por la noche</td>
+          
+          <!Segunda celda de la primera fila>
+          <td>Su alimentación es sobre todo bambú
+            y ocasionalmente pequeños mamíferos,
+            aves, huevos, bayas y otros vegetales.</td>
+          <!Tercera celda de la primera fila>
+        </tr>
+        
+        <!Segunda fila>
+        <tr>
+          <td>Habita en praderas secas y cubiertas
+            de matorrales para poder esconderse, evitando
+            al mismo tiempo los grandes bosques en los que
+            su exposición se incrementaría de forma notable</td>
+          <!Primera celda de la segunda fila>
+          <td>Los koalas viven en el este de Australia,
+            donde hay más eucaliptos; les gustan tanto
+            estos árboles que casi nunca los abandonan</td>
+          <!Segunda celda de la segunda fila>
+          <td>El panda rojo habita en las montañas de
+            Nepal y del norte de Birmania, así como
+            en las regiones centrales de China.</td>
+          <!Tercera celda de la segunda fila>
+        </tr>
+      </table>
+      
+      <div id="contenedor">
+	<img id="foto1" src="https://i.pinimg.com/564x/7c/e7/d5/7ce7d5f487e9c98d4dde84057bba695d.jpg" alt="foto">
+	<div id="parrafo">
+		 Otros animales tiernos</div>
+  
+      <nav>
+        <p>- Ili pika (Ochotona iliensis) -
+  </nav>
+      
+  
+  
+   <div class="container">
+  <p class="two">Es un mamífero, de tan solo 20 centímetros, vive en las cuestas de piedra y se alimenta de pasto en grandes alturas.</p>
+   </div> 
+        
+         <section>
+    
+    <p>Un mamífero con aspecto de conejo que solo se puede encontrar en China. Y con menos de 1.000 ejemplares, ahora son más escasos que los pandas.
+    
+  </section>
+        
+        
+  <footer>
+    <p>-----
+  </footer>
+        
+      </div>
+    
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+            ¿Cuales animales son más tiernos?
+          </button>
+        </h2>
+        <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample" style="">
+          <div class="accordion-body">El Conejo de Angora (Oryctolagus cuniculus),  la Ardilla roja (Sciurus vulgaris), el
+            Hurón patinegro (Mustela nigripes), la
+            Foca monje (Monachus monachus), el 
+            Canguro arborícola de Bennett (Dendrolagus bennettianus), 
+            el Leopardo de las nieves (Panthera uncia) y el
+            Ili pika (Ochotona iliensis).</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+            ¿Que animal es el más adorable?
+          </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Existen distintas especies de animales que se caracterizan por su ternura. Sin embargo, la Oveja, el Quokka y el Panda Rojo son los tres más adorables del mundo.</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+            ¿Que animal es el más dulce?
+          </button>
+        </h2>
+        <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">El erizo, es considerado el animal más dulce.</div>
+        </div>
+      </div>
+    </div>
+      
+      <p> <a href="https://es.wikipedia.org/wiki/Oryctolagus_cuniculus">Más sobre los Conejos</a>
+      
+      <p> <a href="https://es.wikipedia.org/wiki/Phascolarctos_cinereus">Más sobre los Koalas</a>
+        
+      <p> <a href="https://es.wikipedia.org/wiki/Ailurus_fulgens">Más sobre los Pandas Rojos</a>
+      
+      
+	<h3> Autor</h3>
+		<p>Esta pagina web fue creada por Abryle Rodríguez Solano </a> una estudiante de tecnología (programación) en SKOLMI.
+		Puedes escribirle un correo a <a href="rsabryle@gmail.com">rsabryle@gmail.com</a>
+		</p>
+
+<footer>Todos los derechos reservados - FOOTER</footer>
+
+    
+
+  </body>
+</html>
